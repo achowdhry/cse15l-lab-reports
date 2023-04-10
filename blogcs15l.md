@@ -18,4 +18,7 @@
 * The first step is to install git on your device. For windows: https://gitforwindows.org/
 * To use git bash in VScode follow these steps https://stackoverflow.com/a/50527994
 * After that, open a new terminal in the VScode accessing the Terminal menu. In the screenshot below, my command is being displayed, with your command the letters 'nj' should change.
+![image] (/cse15l.png)
+* Because this is the first time you have connected to this server, you will get a message like shown below:
+![image] (/cse15l2.png)
 
