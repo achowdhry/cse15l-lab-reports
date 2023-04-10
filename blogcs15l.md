@@ -11,4 +11,11 @@
 * For this step, you will need a personal laptop or the school computer in order to progress with the installation of VScode. If using a school computer, installation can be skipped as all school computers already have VScode and bash installed. 
 * To download VScode, head to https://code.visualstudio.com/ and chronologicall seek instructions in order to successfully download VScode on your device, choosing the preferred version for your macOS or Windows, respectively.
 * Upon opening the application, you will see a window that seems similar to this (it might be the dark version or the same as this!)
-* 
+![image](/cse121.png)
+* It is appreciated if students can take a screenshot after reaching this checkpoint to ensure their progress to their Professor!
+
+## Part 3- Connecting remotely
+* The first step is to install git on your device. For windows: https://gitforwindows.org/
+* To use git bash in VScode follow these steps https://stackoverflow.com/a/50527994
+* After that, open a new terminal in the VScode accessing the Terminal menu. In the screenshot below, my command is being displayed, with your command the letters 'nj' should change.
+
