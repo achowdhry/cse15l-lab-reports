@@ -37,4 +37,17 @@
 
 * It is very easy to get stuck somewhere in a tutorial, so please take screenshots of wherever you get stuck! Some feedback might be helpful for the next tutorial!
 
+## Part 4- Trying Some Commands
+Different commands such as ls, cd, pwd, mkdir, and cp can be used in various ways. Try running these commands and discuss what messages you see and what they mean.
 
+Some examples of cammands you could try are:
+* cd
+* cd ~
+* ls -a
+* ls -lat
+* pwd
+* ls -F
+* ls -l
+
+Also, if you want to log out of the remote server use:
+* Control-D
