@@ -48,7 +48,8 @@ Some examples of cammands you could try are:
 * pwd
 * ls -F
 * ls -l
-The image below 
+
+The figure below exhibits the behaviour of the terminal when these commands are run:
 
 ![image](/cse15l3.png)
 
