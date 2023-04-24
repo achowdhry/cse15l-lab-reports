@@ -49,6 +49,7 @@ Some examples of cammands you could try are:
 * ls -F
 * ls -l
 The image below 
+
 ![image](/Screenshot 2023-04-23 at 6.52.12 PM.png)
 
 Also, if you want to log out of the remote server use:
