@@ -41,13 +41,11 @@
 Different commands such as ls, cd, pwd, mkdir, and cp can be used in various ways. Try running these commands and discuss what messages you see and what they mean.
 
 Some examples of cammands you could try are:
-* cd
-* cd ~
-* ls -a
-* ls -lat
-* pwd
-* ls -F
-* ls -l
+* 'cd' in order to move between directories
+* 'cd ~' in order to get home directory
+* 'ls -a' in order to get all files that start with "."
+* 'ls -lat' in order to get all files sorted by date
+* 'pwd' in order to print the full path of the current working directory
 
 The figure below exhibits the behaviour of the terminal when these commands are run:
 
