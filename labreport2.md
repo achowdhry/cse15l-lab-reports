@@ -1,4 +1,9 @@
 # **Lab Report 2**
+## Part 1
+* Creating a web server will require Server.java and StringServer.java
+* 
+
+
 ## Part 2
 
 * I created a failure inducing output for the method reversed() in ArrayExamples.java
@@ -7,7 +12,7 @@
 
 * I created a non-failure inducing output for the method reversed() in ArrayExamples.java
 
-![image](/cse15llab2a.png)
+![image](/cse15llab2b.png)
 
 * Then I ran the two tests I created by compiling and running the file as shown:
 
