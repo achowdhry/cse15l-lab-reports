@@ -4,12 +4,56 @@
 * Creating a web server will require Server.java and StringServer.java
 
 * Here is the code for the file StringServer.java after the changes made:
-![image](/cse15llab2f.png)
+
+```
+import java.io.IOException;
+import java.net.URI;
+class Handler implements URLHandler {
+
+    String str = "";
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            if (str.isEmpty()){
+                return "The string contains no message.";
+            }
+            else{
+                return str;
+            }
+        }
+        else if (url.getPath().equals("/add-message")) {
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) {
+                str +=parameters[1] +"\n";
+                return str;
+            }
+        } 
+        return "404 Not Found!";
+        
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
 
 * As asked, the handleRequest() method stores the new string added using add-message concatenating the message onto a new line.
 
 * Then I ran the file by writing this in the terminal:
-![image](/cse15llab2g.png)
+
+```
+Aryan@Vandans-MacBook-Pro wavelet-master % javac Server.java StringServer.java
+Aryan@Vandans-MacBook-Pro wavelet-master % java StringServer 4007
+Server Started! Visit http://localhost:4007 to visit.
+```
 
 * The server shows the url to the server started. So I copied it into my browser and this is what it exhibited:
 ![image](/cse15llab2h.png)
