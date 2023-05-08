@@ -74,11 +74,25 @@ Server Started! Visit http://localhost:4007 to visit.
 
 * I created a failure inducing output for the method reversed() in ArrayExamples.java
 
-![image](/cse15llab2a.png)
+```
+  @Test
+  public void testReversed3() {
+    int[] wrongTest = {2, 4, 5};
+    assertArrayEquals(new int[]{5, 4, 2}, ArrayExamples.reversed(wrongTest));
+  }
+```
 
 * I created a non-failure inducing output for the method reversed() in ArrayExamples.java
 
-![image](/cse15llab2b.png)
+```
+  @Test
+  public void testReversed2() {
+    int[] rightTest = {0, 0, 0};
+    
+    assertArrayEquals(new int[]{0, 0, 0}, ArrayExamples.reversed(rightTest));
+    
+  }
+```
 
 * Then I ran the two tests I created by compiling and running the file as shown:
 
