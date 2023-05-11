@@ -3,9 +3,11 @@
 * Option 1: -type: This option allows you to search for files based on their type. It can be useful when you want to find specific types of files, such as directories (d), regular files (f), symbolic links (l), etc.
 
 Example 1: Find all directories in the ./technical directory.
+
 ```
 find technical -type d
 ```
+
 Output:
 ```
 [cs15lsp23nj@ieng6-202]:docsearch:21$ find technical -type d
@@ -21,11 +23,15 @@ technical/government/Media
 technical/government/Post_Rate_Comm
 technical/plos
 ```
+
 Example 2: Find all symbolic links in the ./technical directory.
+
 ```
 find technical -type l
 ```
+
 Output:
+
 ```
 [cs15lsp23nj@ieng6-202]:docsearch:22$ find technical -type l
 [cs15lsp23nj@ieng6-202]:docsearch:23$ 
@@ -34,9 +40,13 @@ Output:
 * Option 2: -name: This option allows you to search for files or directories with a specific name or pattern.
 
 Example 1: Find all files in the ./technical directory that have the extension .txt.
+
 ```
 find technical -name "*.txt"
+```
+
 Output:
+
 ```
 [cs15lsp23nj@ieng6-202]:docsearch:23$ find technical -name "*.txt"
 technical/911report/chapter-1.txt
@@ -1431,36 +1441,43 @@ technical/plos/pmed.0020275.txt
 technical/plos/pmed.0020278.txt
 technical/plos/pmed.0020281.txt
 ```
-...
+
 Example 2: Find all directories in the ./technical directory that start with the letter a.
+
 ```
 find technical -type d -name "a*"
 ```
+
 Output:
+
 ```
 [cs15lsp23nj@ieng6-202]:docsearch:25$ find technical -type d -name "a*"
 [cs15lsp23nj@ieng6-202]:docsearch:25$ 
 ```
-...
-Source: Linux find command examples
 
-Option 3: -size: This option allows you to search for files based on their size.
+* Option 3: -size: This option allows you to search for files based on their size.
 
 Example 1: Find all files in the ./technical directory that are larger than 1MB.
+
 ```
 find technical -type f -size +1M
 ```
+
 Output:
+
 ```
 [cs15lsp23nj@ieng6-202]:docsearch:26$ find technical -type f -size +1M
 [cs15lsp23nj@ieng6-202]:docsearch:26$ 
 ```
-...
+
 Example 2: Find all files in the ./technical directory that are smaller than 100 kilobytes.
+
 ```
 find technical -type f -size -100k
 ```
+
 Output:
+
 ```
 [cs15lsp23nj@ieng6-202]:docsearch:26$ find ./technical -type f -size -100k
 ./technical/911report/chapter-10.txt
@@ -2826,16 +2843,17 @@ Output:
 ./technical/plos/pmed.0020278.txt
 ./technical/plos/pmed.0020281.txt
 ```
-...
-Source: Linux find command
 
 * Option 4: -mtime: This option allows you to search for files based on their modification time.
 
 Example 1: Find all files in the ./technical directory that were modified within the last 7 days.
+
 ```
 find technical -type f -mtime -7
 ```
+
 Output:
+
 ```
 [cs15lsp23nj@ieng6-202]:docsearch:27$ find technical -type f -mtime -7
 technical/911report/chapter-1.txt
@@ -4230,7 +4248,7 @@ technical/plos/pmed.0020275.txt
 technical/plos/pmed.0020278.txt
 technical/plos/pmed.0020281.txt
 ```
-...
+
 Example 2: Find all files in the ./technical directory that were modified exactly 30 days ago.
 ```
 find technical -type f -mtime 30
