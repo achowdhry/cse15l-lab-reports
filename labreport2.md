@@ -52,20 +52,30 @@ class StringServer {
 ```
 Aryan@Vandans-MacBook-Pro wavelet-master % javac Server.java StringServer.java
 Aryan@Vandans-MacBook-Pro wavelet-master % java StringServer 4007
+```
+* After compiling the following message will appear. Left click the link in the message below in order to open the server created, in your browser.
+```
 Server Started! Visit http://localhost:4007 to visit.
 ```
 
 * The server shows the url to the server started. So I copied it into my browser and this is what it exhibited:
 ![image](/cse15llab2h.png)
 
-* I had added this message if the string str is empty and has no message, "The string contains no message.".
+* The message, "The string contains no message." is displayed because handleRequest method is called upon, which checks the if statement in order to check whether the string str is empty. Therefore, this message is displayed as the string str contained no message.
 
-* To add a message, we add /add-message at the end of the url and any message we want. For instance, I will try to add the messages "Hi" and "I love Cristiano Ronaldo".
+* To add a message, we add /add-message at the end of the url and any message we want. For instance, I will try to add the message "Hi" by concatenating the url, "localhost:4000/" with "/add-message?s=Hi".
 ![image](/cse15llab2i.png)
 
+
+* Then concatenating the url, "localhost:4000/" with "/add-message?s=I%20love%20Cristiano%20Ronaldo". Here the command "%20" adds a space " " between the words. This url gives the output:
 ![image](/cse15llab2j.png)
 
-* The method handleRequest() successfully finds the string "/add-message" in the url. Therefore, it detects where the string "=" appears and splits it, and then detecting the first element of the array, verifying whether it is "s".
+* While adding the above message, "Hi", the above url typed calls handleRequest method, wherein url is the parameter. It runs through the if statement, checking whether the url parameter input contains "/add-message". After checking, it determines that if the condition is true, the method makes a string array parameter created by splitting the string with "=", regex. Then the iterator checks the first element of the array, whether it is "s" or not. If the condition is deemed true then the iterator concatenates the string to the variable str, then the method concludes by returning the string, displaying it on the server.
+
+
+* Then when we add the second phrase "I love Cristiano Ronaldo", it displays it in a different line as compared to the message "Hi" because when the second message was added to str, it created a new line as well.
+
+* If any condition is deemed false while the iterator runs through the loop then the  message "404 Not Found" is displayed.
 
 * I used "%20" in order to write a message that was separated by spaces.
 
