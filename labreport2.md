@@ -97,6 +97,32 @@ Server Started! Visit http://localhost:4007 to visit.
 * Then I ran the two tests I created by compiling and running the file as shown:
 
 ![image](/cse15llab2c.png)
+```
+Aryan@Vandans-MacBook-Pro lab3-main % javac -cp .:lib/hamcrest-core1.3.jar:lib/junit 4.13.2.jar *.java
+Aryan@Vandans-MacBook-Pro lab3-main % java -cp .:lib/hamcrest-core-1.3.jar:lib/junit 4.13.2.jar org.junit.runner.JUnitCore ArrayTests JUnit version 4.13.2
+..E
+Time: 0.013
+There was 1 failure:
+1) testReversed3 (ArrayTests)
+arrays first differed at element [0]; expected: <5> but was:<0>
+    at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+    at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28) 
+    at org.junit.Assert.internalArrayEquals(Assert.java:534)
+    at org.junit.Assert.assertArrayEquals(Assert.java:418) 
+    at org.junit.Assert.assertArrayEquals(Assert.java:429) 
+    at ArrayTests.testReversed3 (ArrayTests.java:16)
+    ... 32 trimmed
+Caused by: java.lang.AssertionError: expected: <5> but was: <0>
+    at org.junit.Assert.fail(Assert.java:89)
+    at org.junit.Assert. failNotEquals(Assert.java:835)
+    at org.junit.Assert.assertEquals(Assert.java:120)
+    at org.junit.Assert.assertEquals(Assert.java:146)
+    at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+    at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+    ... 38 more
+FAILURES!!!
+Tests run: 2, Failures: 1
+```
 
 * Lastly, in order to correct the code in the method reversed() in the file ArrayExamples.java, I changed the order of the left hand side and right hand side of the equation in line 4 in the method. The first image shows the code before change and the second image shows the code after change.
 
