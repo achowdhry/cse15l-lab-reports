@@ -96,7 +96,6 @@ Server Started! Visit http://localhost:4007 to visit.
 
 * Then I ran the two tests I created by compiling and running the file as shown:
 
-![image](/cse15llab2c.png)
 ```
 Aryan@Vandans-MacBook-Pro lab3-main % javac -cp .:lib/hamcrest-core1.3.jar:lib/junit 4.13.2.jar *.java
 Aryan@Vandans-MacBook-Pro lab3-main % java -cp .:lib/hamcrest-core-1.3.jar:lib/junit 4.13.2.jar org.junit.runner.JUnitCore ArrayTests JUnit version 4.13.2
@@ -124,11 +123,33 @@ FAILURES!!!
 Tests run: 2, Failures: 1
 ```
 
-* Lastly, in order to correct the code in the method reversed() in the file ArrayExamples.java, I changed the order of the left hand side and right hand side of the equation in line 4 in the method. The first image shows the code before change and the second image shows the code after change.
+* Lastly, in order to correct the code in the method reversed() in the file ArrayExamples.java, I changed the order of the left hand side and right hand side of the equation in line 4 in the method. 
+This first image shows the code before correction:
+```
+  // Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
 
-![image](/cse15llab2d.png)
+This second image shows the code after correction made, changing the order of the body of the for loop statement and the output of the return statement:
 
-![image](/cse15llab2e.png)
+```
+  // Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[arr.length - i - 1] = arr[i];
+    }
+    return newArray;
+  }
+```
 
 ## Part 3
 
