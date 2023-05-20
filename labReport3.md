@@ -36,7 +36,10 @@ Output:
 [cs15lsp23nj@ieng6-202]:docsearch:22$ find technical -type l
 [cs15lsp23nj@ieng6-202]:docsearch:23$ 
 ```
-
+Sources Used:
+```
+https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
+```
 * Option 2: -name: This option allows you to search for files or directories with a specific name or pattern.
 
 Example 1: Find all files in the ./technical directory that have the extension .txt.
@@ -1455,6 +1458,11 @@ Output:
 [cs15lsp23nj@ieng6-202]:docsearch:25$ 
 ```
 
+Sources Used:
+```
+https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
+```
+
 * Option 3: -size: This option allows you to search for files based on their size.
 
 Example 1: Find all files in the ./technical directory that are larger than 1MB.
@@ -2842,6 +2850,11 @@ Output:
 ./technical/plos/pmed.0020275.txt
 ./technical/plos/pmed.0020278.txt
 ./technical/plos/pmed.0020281.txt
+```
+
+Sources Used:
+```
+https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
 ```
 
 * Option 4: -mtime: This option allows you to search for files based on their modification time.
@@ -4257,4 +4270,9 @@ Output:
 ```
 [cs15lsp23nj@ieng6-202]:docsearch:28$ find technical -type f -mtime 30
 [cs15lsp23nj@ieng6-202]:docsearch:29$ 
+```
+
+Sources Used:
+```
+https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
 ```
