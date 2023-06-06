@@ -1,4 +1,5 @@
 **Lab Report 5**
+
 In this lab report, I will be looking forward to explore the functioning of different grep commands. In lab report 3, I saw the use of different find commands. I felt that I wanted to explore the grep commands as well.
 
 * Option 1: -r: This option allows grep to search for a pattern recursively within directories and their subdirectories.
