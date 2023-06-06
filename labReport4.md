@@ -1,7 +1,11 @@
 **Lab Report 4: Speeding Command Line Tasks**
+
 **Step 1: Timer**
+
 * Start a timer.
+
 **Step 2: Logging in**
+
 * On the terminal, type your course specific account name command. My couse specific name character's are 'nj': ``` ssh cs15lsp23nj@ieng6.ucsd.edu ```
 
 * The output from the command should be as follows:
@@ -24,7 +28,9 @@ ieng6-203   01:55:01   7  0.20,  0.35,  1.57
  
 Tue Jun 06, 2023  1:59am - Prepping cs15lsp23
 ```
+
 **Step 3: Cloning**
+
 * Create a fork of the repository, 'lab7' from github. Then press the button 'Code', which is in a green box, and copy the https link.
 
 ![image](/cse15lLab4a.png)
@@ -41,7 +47,9 @@ Receiving objects: 100% (38/38), 372.59 KiB | 1.42 MiB/s, done.
 Resolving deltas: 100% (12/12), done.
 [cs15lsp23nj@ieng6-202]:~:118$ 
 ```
+
 **Step 4: Testing**
+
 * To start with testing, run the command ``` cd lab7 ``` to get into the lab7 directory.
 ```
 [cs15lsp23nj@ieng6-202]:~:118$ cd lab7
