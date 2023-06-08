@@ -36,7 +36,9 @@ Tue Jun 06, 2023  1:59am - Prepping cs15lsp23
 ![image](/cse15lLab4c.png)
 
 * Run the command ``` git clone ```, and paste the copied https link into the terminal as shown below:
+
 ```
+
 [cs15lsp23nj@ieng6-202]:~:117$ git clone https://github.com/achowdhry/lab7.git
 Cloning into 'lab7'...
 remote: Enumerating objects: 38, done.
@@ -46,17 +48,24 @@ remote: Total 38 (delta 0), reused 1 (delta 0), pack-reused 35
 Receiving objects: 100% (38/38), 372.59 KiB | 1.42 MiB/s, done.
 Resolving deltas: 100% (12/12), done.
 [cs15lsp23nj@ieng6-202]:~:118$ 
+
 ```
 
 **Step 4: Testing**
 
 * To start with testing, run the command ``` cd lab7 ``` to get into the lab7 directory.
+
 ```
+
 [cs15lsp23nj@ieng6-202]:~:118$ cd lab7
 [cs15lsp23nj@ieng6-202]:lab7:119$          
+
 ```
+
 * Then run the command ``` bash test.sh ``` to run the files in the lab 7 directory. The code blaock below presents that 2 tests were run, 1 failed.
+
 ```
+
 [cs15lsp23nj@ieng6-202]:~:118$ cd lab7
 [cs15lsp23nj@ieng6-202]:lab7:119$ bash test.sh
 JUnit version 4.13.2
@@ -72,14 +81,15 @@ FAILURES!!!
 Tests run: 2,  Failures: 1
 
 [cs15lsp23nj@ieng6-202]:lab7:120$ 
+
 ```
 
 **Step 5: Rectification**
 
 * To enter the file, type the command, ``` vim ListExamples.java ```.
-* Then type ``` /index1 ``` and type ``` <Shift N> ```.
+* Then type ``` /index1 ``` and type ``` <Shift N> ``` .
 * Then press right arrow key five times.
-* At ``` 1 ```, type ``` X ```, then type ``` I ```
+* At ``` 1 ``` , type ``` X ``` , then type ``` I ```
 * Then type ``` 2 ``` and press .
 * Then exit the file using ``` :wq ```
 
@@ -87,10 +97,11 @@ Tests run: 2,  Failures: 1
 
 **Step 6: Testing**
 
-* Go back to the terminal and type ``` vim ListExamples.java ```, in order to enter the file.
+* Go back to the terminal and type ``` vim ListExamples.java ``` , in order to enter the file.
 * Then type ``` bash test.sh ``` , in order to compile and run the file.
 
 ```
+
 [cs15lsp23nj@ieng6-202]:~:169$ cd lab7
 [cs15lsp23nj@ieng6-202]:lab7:160$ bash test.sh
 JUnit version 4.13.2
@@ -100,6 +111,7 @@ Time: 0.002
 OK (2 tests)
 
 [cs15lsp23nj@ieng6-202]:lab7:161$ 
+
 ```
 
 * Here, we can observe that there are no errors anymore.
@@ -107,9 +119,10 @@ OK (2 tests)
 **Step 7: Commit & Push**
 
 * In order to commit the changes, we first need to type ``` git add ```
-* In order to commit ramifications, type ``` git commit -m "Committed" ``` and then push the ramifications with the command ``` git push ```, inside the repository.
+* In order to commit ramifications, type ``` git commit -m "Committed" ``` and then push the ramifications with the command ``` git push ``` , inside the repository.
 
 ```
+
 [cs151sp23nj@ieng6-202:lab7:339$ git commit -m "Committed" 
 [main 2432387] Committed
  Committer: Aryan Chowdhry <cs151sp23nj@ieng6-202.uesd. edu>
