@@ -33,7 +33,7 @@ Tue Jun 06, 2023  1:59am - Prepping cs15lsp23
 
 * Create a fork of the repository, 'lab7' from github. Then press the button 'Code', which is in a green box, and copy the https link.
 
-![image](/cse15lLab4a.png)
+![image](/cse15lLab4c.png)
 
 * Run the command ``` git clone ```, and paste the copied https link into the terminal as shown below:
 ```
