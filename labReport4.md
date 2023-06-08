@@ -55,37 +55,92 @@ Resolving deltas: 100% (12/12), done.
 [cs15lsp23nj@ieng6-202]:~:118$ cd lab7
 [cs15lsp23nj@ieng6-202]:lab7:119$          
 ```
-* Then run the command ``` bash test.sh ``` to run the files in the lab 7 directory.
+* Then run the command ``` bash test.sh ``` to run the files in the lab 7 directory. The code blaock below presents that 2 tests were run, 1 failed.
 ```
 [cs15lsp23nj@ieng6-202]:~:118$ cd lab7
 [cs15lsp23nj@ieng6-202]:lab7:119$ bash test.sh
 JUnit version 4.13.2
-.E
+..E
 Time: 0.002
 There was 1 failure:
-1) initializationError(org.junit.runner.JUnitCommandLineParseResult)
-java.lang.IllegalArgumentException: Could not find class [TestListExamples]
-	at org.junit.runner.JUnitCommandLineParseResult.parseParameters(JUnitCommandLineParseResult.java:100)
-	at org.junit.runner.JUnitCommandLineParseResult.parseArgs(JUnitCommandLineParseResult.java:50)
-	at org.junit.runner.JUnitCommandLineParseResult.parse(JUnitCommandLineParseResult.java:44)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:72)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-Caused by: java.lang.ClassNotFoundException: TestListExamples
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:495)
-	at java.base/java.lang.Class.forName(Class.java:474)
-	at org.junit.internal.Classes.getClass(Classes.java:42)
-	at org.junit.internal.Classes.getClass(Classes.java:27)
-	at org.junit.runner.JUnitCommandLineParseResult.parseParameters(JUnitCommandLineParseResult.java:98)
-	... 4 more
+1) testMerge2(ListExamplesTests)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at ListExamples.merge(ListExamples.java:44)
+	at ListExamplesTests.testMerge2(ListExamplesTests.java:19(
 
 FAILURES!!!
-Tests run: 1,  Failures: 1
+Tests run: 2,  Failures: 1
 
 [cs15lsp23nj@ieng6-202]:lab7:120$ 
 ```
-* As we can see one test is run and failed. 
 
+**Step 5: Rectification**
+
+* To enter the file, type the command, ``` vim ListExamples.java ```.
+* Then type ``` /index1 ``` and type ``` <Shift N> ```.
+* Then press right arrow key five times.
+* At ``` 1 ```, type ``` X ```, then type ``` I ```
+* Then type ``` 2 ``` and press .
+* Then exit the file using ``` :wq ```
+
+![image](/cse15lLab4b.png)
+
+**Step 6: Testing**
+
+* Go back to the terminal and type ``` vim ListExamples.java ```, in order to enter the file.
+* Then type ``` bash test.sh ``` , in order to compile and run the file.
+
+```
+[cs15lsp23nj@ieng6-202]:~:169$ cd lab7
+[cs15lsp23nj@ieng6-202]:lab7:160$ bash test.sh
+JUnit version 4.13.2
+..
+Time: 0.002
+
+OK (2 tests)
+
+[cs15lsp23nj@ieng6-202]:lab7:161$ 
+```
+
+* Here, we can observe that there are no errors anymore.
+
+**Step 7: Commit & Push**
+
+* In order to commit the changes, we first need to type ``` git add ```
+* In order to commit ramifications, type ``` git commit -m "Committed" ``` and then push the ramifications with the command ``` git push ```, inside the repository.
+
+```
+[cs151sp23nj@ieng6-202:lab7:339$ git commit -m "Committed" 
+[main 2432387] Committed
+ Committer: Aryan Chowdhry <cs151sp23nj@ieng6-202.uesd. edu>
+Your name and email address were configured automatically based 
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the 
+following command and follow the instructions in your editor to edit 
+your configuration file:
+	
+	git config --global --edit
+	
+After doing this, you may fix the identity used for this commit with:
+
+	git commit --amend --reset-author
+
+4 files changed, 1 insertion(+), 1 deletion (-) 
+ create mode 100644 ListExamples.class 
+ create mode 100644 ListExamplesTests.class 
+ create mode 100644 StringChecker.class 
+[cs151sp23nj@ieng6-202]:1ab7:340$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.90 KiB | 649.00 KiB/s, done.
+Total 6 (delta 1), reused © (delta 0), pack-reused 0 
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:achowdhry/lab7.git
+   603ed81.2432246 main -> main 
+[cs151sp23nj@ieng6-202]:1ab7:341$
+
+```
+
+			** That is the end of Lab Report 4.**
